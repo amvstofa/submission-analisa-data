@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 
 # Konfigurasi dasar Streamlit
-st.set_page_config(page_title='Dashboard Interaktif Distribusi Sepeda', layout='wide')
+st.set_page_config(page_title='Dashboard Interaktif Sepeda', layout='wide')
 
 # Memuat data
 all_data = pd.read_csv('dashboard/all_data.csv')
@@ -113,5 +113,3 @@ st.pyplot(fig7)
 if st.sidebar.checkbox('Tampilkan Data Mentah'):
     st.subheader('Data Mentah')
     st.write(all_data.head(50))
-
-print(all_data['weathersit_x'].unique())  
